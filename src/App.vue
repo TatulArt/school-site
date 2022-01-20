@@ -1,7 +1,7 @@
 <template>
   <SiteHeader />
 </template>
-
+ 
 <script>
 import SiteHeader from "./components/Header.vue";
 
