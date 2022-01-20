@@ -1,7 +1,7 @@
 <template>
   <div class="py-3 bg-primary">
     <div class="container">
-      <div class="row"> 
+      <div class="row">
         <div class="col-md-6 d-flex justify-content-center align-items-center">
           <span class="text">
             Краснодарский край, Туапсинский р-н, г. Туапсе, ул. Горького 40
