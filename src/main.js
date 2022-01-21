@@ -3,4 +3,3 @@ import App from "./App.vue";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
 createApp(App).mount("#app");
- 
