@@ -2,7 +2,7 @@
   <SiteHeader />
 </template>
 
-<script>
+<script> 
 import SiteHeader from "./components/Header.vue";
 
 export default {
