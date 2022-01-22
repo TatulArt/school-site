@@ -1,7 +1,7 @@
 <template>
   <div class="py-3 bg-primary">
     <div class="container">
-      <div class="row"> 
+      <div class="row">
         <div class="col-md-6 d-flex justify-content-center align-items-center">
           <span class="text">
             Краснодарский край, Туапсинский р-н, г. Туапсе, ул. Горького 40
@@ -17,7 +17,7 @@
     </div>
   </div>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
       <a class="navbar-brand" href="#">Школа №4</a>
 
@@ -64,3 +64,4 @@
   color: rgba(255, 255, 255, 0.7);
 }
 </style>
+>
