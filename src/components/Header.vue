@@ -37,21 +37,21 @@
         class="collapse navbar-collapse flex-grow-0"
         id="navbarSupportedContent"
       >
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Главная</a>
+        <ul class="navbar-nav" id="nav">
+          <li class="nav-item me-2">
+            <router-link to="/">Главная</router-link>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">О школе</a>
+          <li class="nav-item me-2">
+            <router-link to="/about">О школе</router-link>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Учителя</a>
+          <li class="nav-item me-2">
+            <router-link to="/teachers">Учителя</router-link>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Новости</a>
+          <li class="nav-item me-2">
+            <router-link to="/news">Новости</router-link>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Горячая линия</a>
+          <li class="nav-item me-2">
+            <router-link to="/hotline">Горячая линия</router-link>
           </li>
         </ul>
       </div>
@@ -64,4 +64,3 @@
   color: rgba(255, 255, 255, 0.7);
 }
 </style>
->
