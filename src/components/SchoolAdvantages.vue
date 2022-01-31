@@ -4,11 +4,21 @@
       <div id="advantages-list" class="row">
         <div
           id="advantage"
-          class="col"
+          class="col flex-column align-self-stretch pb-4 px-4"
           v-for="advantage of advantagesList"
-          v-bind:key="advantage.title"
+          :key="advantage.title"
         >
-          <img :src="advantage.icon" />
+          <div class="d-flex justify-content-center align-items-center">
+            <div
+              id="advantage-icon"
+              class="d-flex justify-content-center align-items-center"
+            >
+              <img
+                :src="require(`../assets/AdvantagesIcons/${advantage.icon}`)"
+                class="d-block w-50"
+              />
+            </div>
+          </div>
           <h5>{{ advantage.title }}</h5>
           <span>{{ advantage.text }}</span>
         </div>
@@ -23,19 +33,22 @@ export default {
     advantagesList() {
       return [
         {
-          icon: "../assets/AdvantagesIcons/teacher.png",
+          icon: "teacher.png",
           title: "Обученные Учителя",
           text: "",
         },
         {
+          icon: "student.png",
           title: "Качественное Образование",
           text: "",
         },
         {
+          icon: "books.png",
           title: "Собственная Библиотека",
           text: "",
         },
         {
+          icon: "certificate.png",
           title: "Множество Школьных Наград",
           text: "",
         },
@@ -64,5 +77,14 @@ export default {
 
 #advantage:nth-child(4) {
   background-color: #dc3545;
+}
+
+#advantage-icon {
+  margin-top: -60px;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: white;
 }
 </style>
