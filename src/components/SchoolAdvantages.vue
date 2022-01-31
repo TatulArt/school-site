@@ -8,7 +8,7 @@
           v-for="advantage of advantagesList"
           :key="advantage.title"
         >
-          <div class="d-flex justify-content-center align-items-center">
+          <div class="d-flex justify-content-center align-items-center mb-3">
             <div
               id="advantage-icon"
               class="d-flex justify-content-center align-items-center"
