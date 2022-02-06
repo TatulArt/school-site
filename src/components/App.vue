@@ -5,8 +5,8 @@
 </template>
 
 <script>
-import SiteHeader from "./components/SiteHeader.vue";
-import SiteNavigation from "./components/SiteNavigation.vue";
+import SiteHeader from "./modules/SiteHeader.vue";
+import SiteNavigation from "./modules/SiteNavigation.vue";
 
 export default {
   components: {

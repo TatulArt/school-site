@@ -13,10 +13,7 @@
               id="advantage-icon"
               class="d-flex justify-content-center align-items-center"
             >
-              <img
-                :src="require(`../../assets/AdvantagesIcons/${advantage.icon}`)"
-                class="d-block w-50"
-              />
+              <img :src="advantage.icon" class="d-block w-50" />
             </div>
           </div>
           <h5>{{ advantage.title }}</h5>
@@ -29,26 +26,28 @@
 
 <script>
 export default {
+  name: "HomeAdvantages",
+
   computed: {
     advantagesList() {
       return [
         {
-          icon: "teacher.png",
+          icon: require("../../../assets/AdvantagesIcons/teacher.png"),
           title: "Обученные Учителя",
           text: "",
         },
         {
-          icon: "student.png",
+          icon: require("../../../assets/AdvantagesIcons/student.png"),
           title: "Качественное Образование",
           text: "",
         },
         {
-          icon: "books.png",
+          icon: require("../../../assets/AdvantagesIcons/books.png"),
           title: "Собственная Библиотека",
           text: "",
         },
         {
-          icon: "certificate.png",
+          icon: require("../../../assets/AdvantagesIcons/certificate.png"),
           title: "Множество Школьных Наград",
           text: "",
         },

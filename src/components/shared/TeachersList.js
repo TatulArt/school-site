@@ -4,7 +4,7 @@ const teachersList = [
     position: "Директор школы и Учитель Географии",
   },
   {
-    image: "060831416bc0652124ebff5f40336af7.jpg",
+    image: require("../../assets/TeachersPhotos/060831416bc0652124ebff5f40336af7.jpg"),
     name: "Коваленко Оксана Николаевна",
     position: "Заместитель директора",
   },
@@ -16,10 +16,12 @@ const teachersList = [
     name: "Негина Ирина Анатольевна",
     position: "Учитель Русского языка и Литературы",
   },
-];
+].map((teacher) => {
+  if (!teacher.image) {
+    teacher.image = require("../../assets/TeachersPhotos/defaultImage.svg");
+  }
 
-const getTeachersList = () => {
-  return teachersList;
-};
+  return teacher;
+});
 
-export default getTeachersList;
+export default teachersList;

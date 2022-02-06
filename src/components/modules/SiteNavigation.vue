@@ -1,7 +1,9 @@
 <template>
   <nav class="navigation navbar navbar-expand-lg navbar-light">
     <div class="container">
-      <a class="navbar-brand" href="#">Школа №4</a>
+      <router-link to="/" class="btn" id="logo-btn"
+        ><h4>Школа №4</h4></router-link
+      >
 
       <button
         class="navbar-toggler"
@@ -41,7 +43,15 @@
   </nav>
 </template>
 
-<style>
+<style scoped>
+#logo-btn h4 {
+  font-weight: bold;
+}
+
+#logo-btn.router-link-exact-active {
+  color: black;
+}
+
 a.router-link-exact-active {
   color: #1eaaf1;
 }

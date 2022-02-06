@@ -19,12 +19,7 @@
             class="col-lg-5 d-flex align-items-start"
           >
             <div id="achievementIcon">
-              <img
-                class="p-2"
-                :src="
-                  require(`../../assets/AchievementsIcons/${achievement.icon}`)
-                "
-              />
+              <img class="p-2" :src="achievement.icon" />
             </div>
 
             <div id="achievementDescription">
@@ -42,31 +37,31 @@
 
 <script>
 export default {
-  name: "AchievementsSection",
+  name: "AboutAchievements",
 
   computed: {
     achievements() {
       return [
         {
-          icon: "badge.png",
+          icon: require("../../../assets/AchievementsIcons/badge.png"),
           title: "Медали",
           description:
             "Среди выпускников нашей школы 112 «золотых» и 154 «серебряных» медалистов.",
         },
         {
-          icon: "trophy.png",
+          icon: require("../../../assets/AchievementsIcons/trophy.png"),
           title: "Национальный проект «Образование»",
           description:
             "В 2006 году школа стала первым в городе Туапсе победителем конкурса в рамках приоритетного национального проекта «Образование».",
         },
         {
-          icon: "star-medal.png",
+          icon: require("../../../assets/AchievementsIcons/star-medal.png"),
           title: "Память о Герое",
           description:
             "В 2014 году школе присвоено почетное имя героя Великой Отечественной войны, полного кавалера орденов Славы 3-х степеней Ивана Николаевича Чабанова.",
         },
         {
-          icon: "stage.png",
+          icon: require("../../../assets/AchievementsIcons/stage.png"),
           title: "Наша школа - одна из лучших",
           description:
             "По итогам 2014 года наша школа вошла в число 100 муниципальных и государственных общеобразовательных организаций Краснодарского края, обеспечивающих высокий уровень подготовки выпускников.",

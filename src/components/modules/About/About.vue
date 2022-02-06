@@ -1,17 +1,17 @@
 <template>
   <div class="about">
-    <achievements-section />
+    <about-achievements />
   </div>
 </template>
 
 <script>
-import AchievementsSection from "../components/AboutPage/AchievementsSection.vue";
+import AboutAchievements from "./AboutAchievements.vue";
 
 export default {
   name: "About",
 
   components: {
-    AchievementsSection,
+    AboutAchievements,
   },
 };
 </script>

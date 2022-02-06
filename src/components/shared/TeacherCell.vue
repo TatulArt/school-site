@@ -4,10 +4,7 @@
     class="col-md-6 col-lg-3 d-flex flex-column justify-content-between"
   >
     <div id="teacher-image" class="img-wrap ratio ratio-1x1">
-      <img
-        class="d-block w-100"
-        :src="require(`../assets/TeachersPhotos/${teacher.image}`)"
-      />
+      <img class="d-block w-100" :src="teacher.image" />
     </div>
     <div id="teacher-info" class="mt-3 text-center">
       <h3 id="teacher-name">{{ teacher.name }}</h3>
@@ -24,7 +21,7 @@ export default {
     teacher: {
       type: Object,
       required: true,
-      default: (value) => typeof value === "object",
+      validator: (value) => typeof value === "object",
     },
   },
 };

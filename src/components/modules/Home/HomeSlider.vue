@@ -17,10 +17,7 @@
                 active: index === 0,
               }"
             >
-              <img
-                :src="require(`../../assets/SliderPhotos/${photo}`)"
-                class="d-block w-100"
-              />
+              <img :src="photo" class="d-block w-100" />
             </div>
           </div>
           <button
@@ -68,11 +65,11 @@ export default {
   computed: {
     sliderPhotos() {
       return [
-        "5e33b2fd6c44a8a191196ee24623a0d9.jpg",
-        "8e91844ae54cc2a6bc6b941c11e63937.jpg",
-        "b1028d8a49c6088bc9305f061243b68c_0.jpg",
-        "cba0133a349bc2fb39bacb9c1f84744d_0.jpg",
-        "c120deb837b7dc1e79dacf18938045ea.jpg",
+        require("../../../assets/SliderPhotos/5e33b2fd6c44a8a191196ee24623a0d9.jpg"),
+        require("../../../assets/SliderPhotos/8e91844ae54cc2a6bc6b941c11e63937.jpg"),
+        require("../../../assets/SliderPhotos/b1028d8a49c6088bc9305f061243b68c_0.jpg"),
+        require("../../../assets/SliderPhotos/cba0133a349bc2fb39bacb9c1f84744d_0.jpg"),
+        require("../../../assets/SliderPhotos/c120deb837b7dc1e79dacf18938045ea.jpg"),
       ];
     },
   },

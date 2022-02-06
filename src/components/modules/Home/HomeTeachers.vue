@@ -19,25 +19,19 @@
 </template>
 
 <script>
-import TeacherCell from "../TeacherCell.vue";
-import getTeachersList from "../../assets/Utilities/TeachersList.js";
+import TeacherCell from "../../shared/TeacherCell.vue";
+import teachersList from "../../shared/TeachersList.js";
 
 export default {
+  name: "HomeTeachers",
+
   components: {
     TeacherCell,
   },
 
   computed: {
     teachers() {
-      const teachersList = getTeachersList();
-
-      return teachersList.slice(0, 4).map((teacher) => {
-        if (!teacher.image) {
-          teacher.image = "defaultImage.svg";
-        }
-
-        return teacher;
-      });
+      return teachersList.slice(0, 4);
     },
   },
 };

@@ -4,19 +4,26 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: () => import(/* webpackChunkName: "home" */ "../views/Home.vue"),
+    component: () =>
+      import(
+        /* webpackChunkName: "home" */ "../components/modules/Home/Home.vue"
+      ),
   },
   {
     path: "/about",
     name: "About",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
+      import(
+        /* webpackChunkName: "about" */ "../components/modules/About/About.vue"
+      ),
   },
   {
     path: "/teachers",
     name: "Teachers",
     component: () =>
-      import(/* webpackChunkName: "teachers" */ "../views/Teachers.vue"),
+      import(
+        /* webpackChunkName: "teachers" */ "../components/modules/Teachers/Teachers.vue"
+      ),
   },
 ];
 
