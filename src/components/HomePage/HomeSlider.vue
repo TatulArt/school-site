@@ -18,7 +18,7 @@
               }"
             >
               <img
-                :src="require(`../assets/SliderPhotos/${photo}`)"
+                :src="require(`../../assets/SliderPhotos/${photo}`)"
                 class="d-block w-100"
               />
             </div>
@@ -30,7 +30,7 @@
             data-bs-slide="prev"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <span class="visually-hidden">Предыдущий слайд</span>
           </button>
           <button
             class="carousel-control-next"
@@ -39,7 +39,7 @@
             data-bs-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <span class="visually-hidden">Следущий слайд</span>
           </button>
         </div>
       </div>

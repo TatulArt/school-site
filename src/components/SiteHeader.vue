@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="py-3 bg-primary">
+    <div class="py-3">
       <div class="container">
         <div class="row">
           <div
@@ -23,6 +23,10 @@
 </template>
 
 <style scoped>
+header {
+  background-color: #1eaaf1;
+}
+
 .text {
   color: rgba(255, 255, 255, 0.7);
 }

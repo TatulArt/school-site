@@ -20,19 +20,19 @@
         id="navbarSupportedContent"
       >
         <ul class="navbar-nav" id="nav">
-          <li class="nav-item me-2">
+          <li class="nav-item me-3">
             <router-link to="/">Главная</router-link>
           </li>
-          <li class="nav-item me-2">
+          <li class="nav-item me-3">
             <router-link to="/about">О школе</router-link>
           </li>
-          <li class="nav-item me-2">
+          <li class="nav-item me-3">
             <router-link to="/teachers">Учителя</router-link>
           </li>
-          <li class="nav-item me-2">
+          <li class="nav-item me-3">
             <router-link to="/news">Новости</router-link>
           </li>
-          <li class="nav-item me-2">
+          <li class="nav-item me-3">
             <router-link to="/hotline">Горячая линия</router-link>
           </li>
         </ul>
@@ -40,3 +40,9 @@
     </div>
   </nav>
 </template>
+
+<style>
+a.router-link-exact-active {
+  color: #1eaaf1;
+}
+</style>

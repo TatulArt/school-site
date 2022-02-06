@@ -1,5 +1,5 @@
 <template>
-  <section id="advantages-list">
+  <section id="advantages-list" class="mb-5">
     <div class="container-wrap">
       <div id="advantages-list" class="row">
         <div
@@ -14,7 +14,7 @@
               class="d-flex justify-content-center align-items-center"
             >
               <img
-                :src="require(`../assets/AdvantagesIcons/${advantage.icon}`)"
+                :src="require(`../../assets/AdvantagesIcons/${advantage.icon}`)"
                 class="d-block w-50"
               />
             </div>
