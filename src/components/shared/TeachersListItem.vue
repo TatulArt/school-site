@@ -1,9 +1,9 @@
 <template>
   <div
     id="teacher"
-    class="col-md-6 col-lg-3 d-flex flex-column justify-content-between"
+    class="mb-2 col-md-6 col-lg-3 d-flex flex-column justify-content-between"
   >
-    <div id="teacher-image" class="img-wrap ratio ratio-1x1">
+    <div id="teacher-image" class="ratio ratio-1x1">
       <img class="d-block w-100" :src="teacher.image" />
     </div>
     <div id="teacher-info" class="mt-3 text-center">
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "TeacherSell",
+  name: "TeachersListItem",
 
   props: {
     teacher: {
@@ -29,6 +29,7 @@ export default {
 
 <style scoped>
 #teacher {
+  padding-bottom: 2em;
   color: black;
   -webkit-transition: color 0.3s, -webkit-transform 0.3s;
   transition: color 0.3s;

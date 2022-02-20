@@ -1,9 +1,10 @@
 <template>
-  <nav class="navigation navbar navbar-expand-lg navbar-light">
+  <nav
+    id="navbar"
+    class="navigation navbar navbar-expand-lg bg-white navbar-light"
+  >
     <div class="container">
-      <router-link to="/" class="btn" id="logo-btn"
-        ><h4>Школа №4</h4></router-link
-      >
+      <router-link to="/" class="btn" id="logo-btn"></router-link>
 
       <button
         class="navbar-toggler"
@@ -35,7 +36,7 @@
             <router-link to="/news">Новости</router-link>
           </li>
           <li class="nav-item me-3">
-            <router-link to="/hotline">Горячая линия</router-link>
+            <router-link to="/contactinfo">Контактная информация</router-link>
           </li>
         </ul>
       </div>
@@ -43,13 +44,42 @@
   </nav>
 </template>
 
+<script>
+export default {
+  name: "SiteNavigation",
+
+  mounted() {
+    window.addEventListener("scroll", this.fixNavbar);
+  },
+
+  methods: {
+    fixNavbar() {
+      const navbar = document.getElementById("navbar");
+
+      window.scrollY > 200
+        ? navbar.classList.add("navbar-sticky")
+        : navbar.classList.remove("navbar-sticky");
+    },
+  },
+};
+</script>
+
 <style scoped>
-#logo-btn h4 {
-  font-weight: bold;
+.navbar-sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
 }
 
-#logo-btn.router-link-exact-active {
-  color: black;
+#logo-btn {
+  background-image: url(../../assets/Common/logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 3.5em;
+  height: 5.5em;
+  box-shadow: 0 0 0 0;
 }
 
 a.router-link-exact-active {

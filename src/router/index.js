@@ -25,6 +25,22 @@ const routes = [
         /* webpackChunkName: "teachers" */ "../components/modules/Teachers/Teachers.vue"
       ),
   },
+  {
+    path: "/news",
+    name: "News",
+    component: () =>
+      import(
+        /* webpackChunkName: "news" */ "../components/modules/News/News.vue"
+      ),
+  },
+  {
+    path: "/contactinfo",
+    name: "ContactInfo",
+    component: () =>
+      import(
+        /* webpackChunkName: "contactinfo" */ "../components/modules/ContactInfo/ContactInfo.vue"
+      ),
+  },
 ];
 
 const router = createRouter({

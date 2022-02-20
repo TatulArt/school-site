@@ -1,6 +1,6 @@
 <template>
   <section id="teachers">
-    <div class="container">
+    <div class="container mb-5">
       <div id="sectionDescription">
         <h2>Наши Педагоги</h2>
         <span></span>
@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import TeacherCell from "../../shared/TeacherCell.vue";
+import TeacherCell from "../../shared/TeachersListItem.vue";
 import teachersList from "../../shared/TeachersList.js";
 
 export default {
@@ -29,10 +29,10 @@ export default {
     TeacherCell,
   },
 
-  computed: {
-    teachers() {
-      return teachersList.slice(0, 4);
-    },
+  data() {
+    return {
+      teachers: teachersList.slice(0, 4),
+    };
   },
 };
 </script>

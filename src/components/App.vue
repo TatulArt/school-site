@@ -9,6 +9,8 @@ import SiteHeader from "./modules/SiteHeader.vue";
 import SiteNavigation from "./modules/SiteNavigation.vue";
 
 export default {
+  name: "App",
+
   components: {
     SiteHeader,
     SiteNavigation,

@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import TeacherCell from "../../shared/TeacherCell.vue";
+import TeacherCell from "../../shared/TeachersListItem.vue";
 import teachersList from "../../shared/TeachersList.js";
 
 export default {
@@ -21,10 +21,10 @@ export default {
     TeacherCell,
   },
 
-  computed: {
-    teachers() {
-      return teachersList;
-    },
+  data() {
+    return {
+      teachers: teachersList,
+    };
   },
 };
 </script>

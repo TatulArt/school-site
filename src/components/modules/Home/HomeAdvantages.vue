@@ -1,10 +1,10 @@
 <template>
-  <section id="advantages-list" class="mb-5">
-    <div class="container-wrap">
+  <section id="advantages">
+    <div class="container-fluid mb-5">
       <div id="advantages-list" class="row">
         <div
           id="advantage"
-          class="col flex-column align-self-stretch pb-4 px-4"
+          class="col flex-column p-2 pb-4 px-4"
           v-for="advantage of advantagesList"
           :key="advantage.title"
         >
@@ -16,8 +16,10 @@
               <img :src="advantage.icon" class="d-block w-50" />
             </div>
           </div>
-          <h5>{{ advantage.title }}</h5>
-          <span>{{ advantage.text }}</span>
+          <div id="advantageText" class="pb-4 mt-3">
+            <h5>{{ advantage.title }}</h5>
+            <span>{{ advantage.text }}</span>
+          </div>
         </div>
       </div>
     </div>
@@ -28,9 +30,9 @@
 export default {
   name: "HomeAdvantages",
 
-  computed: {
-    advantagesList() {
-      return [
+  data() {
+    return {
+      advantagesList: [
         {
           icon: require("../../../assets/AdvantagesIcons/teacher.png"),
           title: "Обученные Учителя",
@@ -51,8 +53,8 @@ export default {
           title: "Множество Школьных Наград",
           text: "",
         },
-      ];
-    },
+      ],
+    };
   },
 };
 </script>
@@ -81,8 +83,8 @@ export default {
 #advantage-icon {
   margin-top: -60px;
   z-index: 1;
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   background-color: white;
 }
