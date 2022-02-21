@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-5">
+  <div class="container my-5">
     <contact-info-top />
     <contact-info-bottom />
   </div>

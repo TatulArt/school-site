@@ -1,7 +1,7 @@
 <template>
   <div class="news">
     <div class="container">
-      <div class="album mt-5">
+      <div class="album my-5">
         <div
           class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center"
         >

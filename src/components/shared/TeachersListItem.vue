@@ -1,8 +1,5 @@
 <template>
-  <div
-    id="teacher"
-    class="mb-2 col-md-6 col-lg-3 d-flex flex-column justify-content-between"
-  >
+  <div id="teacher" class="mb-2 col-md-6 col-lg-3">
     <div id="teacher-image" class="ratio ratio-1x1">
       <img class="d-block w-100" :src="teacher.image" />
     </div>

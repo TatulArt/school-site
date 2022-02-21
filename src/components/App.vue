@@ -2,11 +2,13 @@
   <site-header />
   <site-navigation />
   <router-view />
+  <site-footer />
 </template>
 
 <script>
 import SiteHeader from "./modules/SiteHeader.vue";
 import SiteNavigation from "./modules/SiteNavigation.vue";
+import SiteFooter from "./modules/SiteFooter.vue";
 
 export default {
   name: "App",
@@ -14,6 +16,7 @@ export default {
   components: {
     SiteHeader,
     SiteNavigation,
+    SiteFooter,
   },
 };
 </script>

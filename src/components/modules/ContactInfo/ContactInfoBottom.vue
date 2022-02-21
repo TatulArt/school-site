@@ -7,7 +7,7 @@
             <input type="text" class="form-control" placeholder="Ваше Имя" />
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Ваш Email" />
+            <input type="text" class="form-control" placeholder="Ваш E-mail" />
           </div>
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Тема" />
@@ -74,5 +74,12 @@ export default defineComponent({
 
 textarea.form-control {
   height: 230px !important;
+}
+
+input:-webkit-autofill {
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: 0 0 0 1000px white inset;
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  -webkit-text-fill-color: #6c757d;
 }
 </style>
