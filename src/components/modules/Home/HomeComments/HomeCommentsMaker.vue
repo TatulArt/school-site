@@ -1,55 +1,60 @@
 <template>
   <div id="commentsMaker" class="mb-5">
-    <div id="commentsForm" class="container d-md-flex justify-content-end">
-      <div id="formHeading" class="heading-section heading-section-white"></div>
-      <div id="formBody">
-        <form id="form" action="#">
-          <div class="d-md-flex justify-content-between">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Имя" />
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Фамилия" />
-            </div>
-          </div>
-          <div class="d-md-flex justify-content-between">
-            <div class="form-group">
-              <div class="form-field">
-                <select id="positionSelect" class="form-select form-control">
-                  <option>Выберите ваш статус</option>
-                  <option value="student">Ученик</option>
-                  <option value="teacher">Учитель</option>
-                  <option value="parent">Родитель</option>
-                  <option value="admin">Администратор</option>
-                  <option value="other">Иное</option>
-                </select>
+    <div id="commentsForm" class="d-md-flex justify-content-end">
+      <div id="formContainer" class="py-5">
+        <div id="formHeading" class="pb-5">
+          <h2 class="mb-3">Оставьте Комментарий!</h2>
+          <p>
+            Здесь вы можете написать собственный комментарий, который будут
+            видеть и другие пользователи нашего сайта!
+          </p>
+        </div>
+        <div class="" id="formBody">
+          <form id="form" action="#">
+            <div class="d-md-flex justify-content-between">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Имя" />
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Фамилия" />
               </div>
             </div>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Телефон" />
+            <div class="d-md-flex justify-content-between">
+              <div class="form-group">
+                <div class="form-field">
+                  <select id="positionSelect" class="form-select form-control">
+                    <option>Выберите ваш статус</option>
+                    <option value="student">Ученик</option>
+                    <option value="teacher">Учитель</option>
+                    <option value="parent">Родитель</option>
+                    <option value="admin">Администратор</option>
+                    <option value="other">Иное</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Телефон" />
+              </div>
             </div>
-          </div>
-          <div class="d-md-flex justify-content-between">
-            <div class="form-group">
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="2"
-                class="form-control"
-                placeholder="Комментарий"
-              ></textarea>
+            <div class="row">
+              <div class="form-group mb-4 col-md-8">
+                <textarea
+                  id="commentTextArea"
+                  class="form-control"
+                  placeholder="Комментарий"
+                ></textarea>
+              </div>
+              <div class="form-group mb-4 col-md-4">
+                <input
+                  id="submitBtn"
+                  type="submit"
+                  value="Отправить"
+                  class="btn btn-secondary"
+                />
+              </div>
             </div>
-            <div class="form-group">
-              <input
-                id="submitBtn"
-                type="submit"
-                value="Отправить"
-                class="btn btn-secondary py-3 px-4"
-              />
-            </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -63,12 +68,26 @@ export default {
 
 <style scoped>
 #commentsMaker {
+  background-image: url("../../../../assets/Common/school.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: 0% 100%;
   background-color: #1eaaf1;
-  padding-top: 1em;
+  color: #fff;
 }
 
-#commentsForm {
-  margin-right: 2em;
+#formContainer {
+  background-color: #1eaaf1;
+  padding: 2em;
+}
+
+#formHeading {
+  max-width: 500px;
+}
+
+#commentTextArea {
+  padding-bottom: 0 !important;
 }
 
 #commentsMaker .form-control {
@@ -76,32 +95,40 @@ export default {
   border: transparent;
   background-color: transparent;
   border-radius: 0%;
-  border-bottom: solid 1px #ccc;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
   font-size: 16px;
-  height: 58px;
-  margin-bottom: 1em;
-  padding-left: 0;
+  height: 60px;
+  padding: 0;
+  min-width: 240px;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
+.form-group {
+  margin-bottom: 2em;
+}
+
+#positionSelect option {
+  background-color: #212529;
+}
+
 .form-control,
 .form-control::placeholder {
-  color: #ccc;
+  color: #fff;
 }
 
 #submitBtn {
+  width: 100%;
   background: #fda638;
   border: 1px solid #fda638;
   color: #fff;
-  margin-left: 1em;
-  margin-bottom: 1em;
+  height: 3.8em;
 }
 
 input:-webkit-autofill {
   transition: background-color 5000s ease-in-out 0s;
   box-shadow: 0 0 0 1000px #1eaaf1 inset;
   -webkit-box-shadow: 0 0 0 1000px #1eaaf1 inset;
-  -webkit-text-fill-color: #ccc;
+  -webkit-text-fill-color: #fff;
 }
 </style>

@@ -22,9 +22,10 @@
           </div>
           <div class="form-group">
             <input
+              id="submit-btn"
               type="submit"
-              value="Отправить Сообщение"
-              class="btn btn-primary py-3 px-5"
+              value="Отправить cообщение"
+              class="btn py-3 px-5"
             />
           </div>
         </form>
@@ -76,6 +77,10 @@ textarea.form-control {
   height: 230px !important;
 }
 
+#submit-btn {
+  background-color: #1eaaf1;
+  color: #fff;
+}
 input:-webkit-autofill {
   transition: background-color 5000s ease-in-out 0s;
   box-shadow: 0 0 0 1000px white inset;

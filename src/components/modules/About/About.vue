@@ -13,7 +13,7 @@
             обучают наших учеников достигать новых высот.
           </p>
         </div>
-        <div id="achievementsList" class="col-lg row mt-5">
+        <div id="achievementsList" class="col-lg row my-5">
           <div
             id="achievement"
             v-for="achievement of achievements"

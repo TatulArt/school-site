@@ -64,20 +64,14 @@ export default {
   color: white;
 }
 
-#advantage:nth-child(1) {
-  background-color: #007bff;
-}
-
-#advantage:nth-child(2) {
-  background-color: #28a745;
-}
-
+#advantage:nth-child(1),
 #advantage:nth-child(3) {
-  background-color: #6f42c1;
+  background-color: #1eaaf1;
 }
 
+#advantage:nth-child(2),
 #advantage:nth-child(4) {
-  background-color: #dc3545;
+  background-color: #1e96f1;
 }
 
 #advantage-icon {

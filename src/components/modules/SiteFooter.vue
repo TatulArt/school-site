@@ -106,7 +106,7 @@ span {
 
 #submitInput {
   height: 52px;
-  background: #5d50c6;
+  background: #1eaaf1;
   font-weight: bold;
   font-size: 18px;
   color: #fff;
