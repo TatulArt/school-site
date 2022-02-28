@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header id="siteHeader">
     <div class="py-3">
       <div class="container">
         <div class="row">

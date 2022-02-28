@@ -1,6 +1,6 @@
 <template>
   <div id="contactInfo" class="row d-flex mb-5">
-    <div class="col-md-3 d-flex">
+    <div data-aos="fade-up" class="col-md-3 d-flex">
       <div
         id="info"
         class="bg-light col p-4 d-flex flex-column justify-content-center"
@@ -11,7 +11,7 @@
         </small>
       </div>
     </div>
-    <div class="col-md-3 d-flex">
+    <div data-aos="fade-up" data-aos-delay="100" class="col-md-3 d-flex">
       <div
         id="info"
         class="bg-light col p-4 d-flex flex-column justify-content-center"
@@ -20,7 +20,7 @@
         <a href="tel://27242">2-72-42</a>
       </div>
     </div>
-    <div class="col-md-3 d-flex">
+    <div data-aos="fade-up" data-aos-delay="200" class="col-md-3 d-flex">
       <div
         id="info"
         class="bg-light col d-flex flex-column justify-content-center"
@@ -29,7 +29,7 @@
         <a href="mailto:school4@tuap.kubannet.ru">school4@tuap.kubannet.ru </a>
       </div>
     </div>
-    <div class="col-md-3 d-flex">
+    <div data-aos="fade-up" data-aos-delay="300" class="col-md-3 d-flex">
       <div
         id="info"
         class="p-4 bg-light col d-flex flex-column justify-content-center"

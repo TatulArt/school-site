@@ -47,20 +47,6 @@
 <script>
 export default {
   name: "SiteNavigation",
-
-  mounted() {
-    window.addEventListener("scroll", this.fixNavbar);
-  },
-
-  methods: {
-    fixNavbar() {
-      const navbar = document.getElementById("navbar");
-
-      window.scrollY > 200
-        ? navbar.classList.add("navbar-sticky")
-        : navbar.classList.remove("navbar-sticky");
-    },
-  },
 };
 </script>
 

@@ -1,11 +1,13 @@
 <template>
   <div id="teacher" class="mb-2 col-md-6 col-lg-3">
-    <div id="teacher-image" class="ratio ratio-1x1">
-      <img class="d-block w-100" :src="teacher.image" />
-    </div>
-    <div id="teacher-info" class="mt-3 text-center">
-      <h3 id="teacher-name">{{ teacher.name }}</h3>
-      <span id="teacher-position">{{ teacher.position }}</span>
+    <div data-aos="fade-up" :data-aos-delay="index * 150">
+      <div id="teacher-image" class="ratio ratio-1x1">
+        <img class="d-block w-100" :src="teacher.image" />
+      </div>
+      <div id="teacher-info" class="mt-3 text-center">
+        <h3 id="teacher-name">{{ teacher.name }}</h3>
+        <span id="teacher-position">{{ teacher.position }}</span>
+      </div>
     </div>
   </div>
 </template>
@@ -20,6 +22,7 @@ export default {
       required: true,
       validator: (value) => typeof value === "object",
     },
+    index: Number,
   },
 };
 </script>

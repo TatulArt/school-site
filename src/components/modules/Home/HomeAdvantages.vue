@@ -5,8 +5,10 @@
         <div
           id="advantage"
           class="col flex-column p-2 pb-4 px-4"
-          v-for="advantage of advantagesList"
+          v-for="(advantage, index) of advantagesList"
           :key="advantage.title"
+          data-aos="fade-up"
+          :data-aos-delay="index * 100"
         >
           <div class="d-flex justify-content-center align-items-center mb-3">
             <div
@@ -74,9 +76,12 @@ export default {
   background-color: #1e96f1;
 }
 
+#advantage {
+  z-index: 1;
+}
+
 #advantage-icon {
   margin-top: -60px;
-  z-index: 1;
   width: 110px;
   height: 110px;
   border-radius: 50%;

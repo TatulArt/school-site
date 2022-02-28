@@ -2,13 +2,15 @@
   <div id="commentsList" class="container mb-5">
     <div id="commentsListTitle" class="d-flex justify-content-center mb-5">
       <div class="text-center">
-        <h2>Комментарии</h2>
+        <h2 data-aos="fade-up">Комментарии</h2>
       </div>
     </div>
     <div
       id="carousel"
       class="carousel carousel-dark slide"
       data-bs-ride="carousel"
+      data-aos="fade-up"
+      data-aos-delay="150"
     >
       <div class="carousel-inner">
         <div
@@ -55,32 +57,14 @@
 </template>
 
 <script>
+import commentsList from "../../../shared/CommentsList.js";
+
 export default {
   name: "CommentsList",
 
   data() {
     return {
-      comments: [
-        {
-          image: require("../../../../assets/CommentsPhotos/Без названия.jpg"),
-          quote:
-            "Замечательная школа, опытные и чуткие педагоги. Коммуникабельный директор, образованный и тактичный.",
-          name: "Махрова Наталья Сергеевна",
-          position: "Родитель",
-        },
-        {
-          quote:
-            "Мне очень нравится моя школа, но я бы хотела что бы у нас в школе улучшилось питание.",
-          name: "Шмидт Светлана Сергееана",
-          position: "Ученик",
-        },
-      ].map((comment) => {
-        if (!comment.image) {
-          comment.image = require("../../../../assets/Shared/defaultImage.svg");
-        }
-
-        return comment;
-      }),
+      comments: commentsList,
     };
   },
 };

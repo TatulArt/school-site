@@ -1,9 +1,11 @@
 <template>
   <div
     id="newsListItem"
-    class="col-sm-8 col-md-8 col-lg-4 d-flex flex-column justify-content-between card shadow-sm"
+    class="col-sm-8 col-md-8 col-lg-4 d-flex flex-column justify-content-between"
+    data-aos="fade-up"
+    :data-aos-delay="newsListItemIndex * 100"
   >
-    <div>
+    <div class="m-2 col card shadow-sm">
       <div
         :id="`carousel${newsListItemIndex}`"
         class="carousel slide"
@@ -44,9 +46,6 @@
           {{ text }}
         </p>
       </div>
-    </div>
-    <div class="pb-3">
-      <small id="newsListItemDate" class="text-muted">{{ date }}</small>
     </div>
   </div>
 </template>

@@ -2,7 +2,11 @@
   <div class="about">
     <div class="container">
       <div class="row">
-        <div class="order-md-last col-lg-5 py-5 px-4 bg-light">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="order-md-last col-lg-5 py-5 px-4 bg-light"
+        >
           <h2 class="mb-4">Добро пожаловать в раздел о нашей Школе!</h2>
           <p>
             Школа №4 города Туапсе была основана в 1981 году. Ей присвоено имя
@@ -13,7 +17,7 @@
             обучают наших учеников достигать новых высот.
           </p>
         </div>
-        <div id="achievementsList" class="col-lg row my-5">
+        <div data-aos="fade-up" id="achievementsList" class="col-lg row my-5">
           <div
             id="achievement"
             v-for="achievement of achievements"

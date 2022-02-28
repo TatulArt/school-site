@@ -45,16 +45,18 @@
         id="slider-caption"
         class="position-absolute top-50 start-50 translate-middle"
       >
-        <h2 id="caption-text">
-          Добро пожаловать на веб-сайт<br />МБОУ СОШ №4 города Туапсе!
-        </h2>
-        <router-link
-          to="/about"
-          class="rounded-pill btn px-4 py-3 mt-3"
-          id="about-btn"
-        >
-          О школе
-        </router-link>
+        <div data-aos="fade-up">
+          <h2 id="caption-text">
+            Добро пожаловать на веб-сайт<br />МБОУ СОШ №4 города Туапсе!
+          </h2>
+          <router-link
+            to="/about"
+            class="rounded-pill btn px-4 py-3 mt-3"
+            id="about-btn"
+          >
+            О школе
+          </router-link>
+        </div>
       </div>
     </div>
   </section>
