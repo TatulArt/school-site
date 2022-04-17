@@ -20,7 +20,6 @@
           </div>
           <div id="advantageText" class="pb-4 mt-3">
             <h5>{{ advantage.title }}</h5>
-            <span>{{ advantage.text }}</span>
           </div>
         </div>
       </div>
@@ -38,22 +37,18 @@ export default {
         {
           icon: require("../../../assets/AdvantagesIcons/teacher.png"),
           title: "Обученные Учителя",
-          text: "",
         },
         {
           icon: require("../../../assets/AdvantagesIcons/student.png"),
           title: "Качественное Образование",
-          text: "",
         },
         {
           icon: require("../../../assets/AdvantagesIcons/books.png"),
           title: "Собственная Библиотека",
-          text: "",
         },
         {
           icon: require("../../../assets/AdvantagesIcons/certificate.png"),
           title: "Множество Школьных Наград",
-          text: "",
         },
       ],
     };
@@ -78,6 +73,13 @@ export default {
 
 #advantage {
   z-index: 1;
+}
+
+#advantageText {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #advantage-icon {
